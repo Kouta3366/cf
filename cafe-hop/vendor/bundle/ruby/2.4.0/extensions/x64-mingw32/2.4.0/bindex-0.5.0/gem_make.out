@@ -1,0 +1,22 @@
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+D:/Ruby24-x64/bin/ruby.exe -r ./siteconf20181104-7444-38kxhl.rb extconf.rb
+creating Makefile
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+make: 警告: ファイル 'Makefile' の修正時刻 1 は未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+make: 警告: ファイル 'Makefile' の修正時刻 0.94 は未来の時刻です
+generating cruby-x64-mingw32.def
+compiling cruby.c
+linking shared-object bindex/cruby.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+make: 警告: ファイル 'cruby.so' の修正時刻 1.7 は未来の時刻です
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20181104-7444-1830tgd/bindex
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

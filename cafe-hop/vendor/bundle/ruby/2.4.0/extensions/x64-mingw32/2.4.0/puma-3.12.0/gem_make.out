@@ -1,0 +1,27 @@
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+D:/Ruby24-x64/bin/ruby.exe -r ./siteconf20181104-7444-1indfl6.rb extconf.rb
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+creating Makefile
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" clean
+make: 警告: ファイル 'Makefile' の修正時刻 0.64 は未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR="
+make: 警告: ファイル 'Makefile' の修正時刻 0.56 は未来の時刻です
+generating puma_http11-x64-mingw32.def
+compiling http11_parser.c
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" install
+make: 警告: ファイル 'puma_http11.so' の修正時刻 0.56 は未来の時刻です
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20181104-7444-n2bkh5/puma
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

@@ -1,0 +1,20 @@
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/duktape-2.0.1.0/ext/duktape
+D:/Ruby24-x64/bin/ruby.exe -r ./siteconf20181104-7444-hh4jjy.rb extconf.rb
+checking for rb_sym2str()... yes
+creating Makefile
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/duktape-2.0.1.0/ext/duktape
+make "DESTDIR=" clean
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/duktape-2.0.1.0/ext/duktape
+make "DESTDIR="
+generating duktape_ext-x64-mingw32.def
+compiling duktape.c
+compiling duktape_ext.c
+linking shared-object duktape_ext.so
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/duktape-2.0.1.0/ext/duktape
+make "DESTDIR=" install
+make: 警告: ファイル 'duktape_ext.so' の修正時刻 0.31 は未来の時刻です
+/usr/bin/install -c -m 0755 duktape_ext.so ./.gem.20181104-7444-1dlbqy1
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

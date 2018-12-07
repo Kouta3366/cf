@@ -1,0 +1,80 @@
+<% if @current_user %>
+  <div class="test">
+    <p class="test2"><img class="picture2" src="<%="/user_images/#{@user.image_name}"%>" ></p>
+  </div>
+  <div class="username"><%= @user.name %></div>
+  <div class="useremail"><%= @user.email %></div>
+  <% if @user.id == @current_user.id %>
+    <div class="useredit"><%= link_to("編集", "/users/#{@user.id}/edit") %></div>
+  <% end %>
+  <div class="container">
+    <div class="tablist">
+      <ul class="user-tabs">
+        <li><%= link_to("投稿", "/users/#{@user.id}") %></li>
+        <li class="active"><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+      </ul>
+      <% @likes.each do |like| %>
+        <% list = List.find_by(id: like.list_id) %>
+        <% if list %>
+          <div class="posts-index-item">
+            <img class="picture" src="<%="/cafe_images/#{list.image_name}"%>" alt="写真" align="middle">
+            <a  class="cafe-name" href="<%="/home/#{list.id}/show"%>"><%= list.name %></a>
+            <span class="pref">
+              <%= @areas[list.area_id - 1].prefecture %>
+            </span>
+            <span class="user">
+              <img class="user-left2" src="<%="/user_images/#{list.user.image_name}"%>">
+              <%= link_to(list.user.name, "/users/#{list.user.id}") %>
+            </span>
+            <span class="like">
+              <% if Like.find_by(user_id: @current_user.id, list_id: list.id) %>
+                <%= link_to("/likes/#{list.id}/4/#{@user.id}/destroy", {method: "post"}) do %>
+                  <span class="fa fa-heart like-btn-unlike"></span>
+                <% end %>
+              <% else %>
+                <%= link_to("/likes/#{list.id}/4/#{@user.id}/create", {method: "post"}) do %>
+                  <span class="fa fa-heart like-btn"></span>
+                <% end %>
+              <% end %>
+              <%= @likes_count = Like.where(list_id: list.id).count %>
+            </span>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+<% else %>
+  <div class="test">
+    <p class="test2"><img class="picture2" src="<%="/user_images/#{@user.image_name}"%>" ></p>
+  </div>
+  <div class="username"><%= @user.name %></div>
+  <div class="useremail"><%= @user.email %></div>
+  <div class="container">
+    <div class="tablist">
+      <ul class="user-tabs">
+        <li><%= link_to("投稿", "/users/#{@user.id}") %></li>
+        <li class="active"><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+      </ul>
+      <% @likes.each do |like| %>
+        <% list = List.find_by(id: like.list_id) %>
+        <% if list %>
+          <div class="posts-index-item">
+            <img class="picture" src="<%="/cafe_images/#{list.image_name}"%>" alt="写真" align="middle">
+            <a  class="cafe-name" href="<%="/home/#{list.id}/show"%>"><%= list.name %></a>
+            <span class="pref">
+              <%= @areas[list.area_id - 1].prefecture %>
+            </span>
+            <span class="user">
+              <img class="user-left2" src="<%="/user_images/#{list.user.image_name}"%>">
+              <%= link_to(list.user.name, "/users/#{list.user.id}") %>
+            </span>
+            <span class="like">
+              <span class="fa fa-heart like-btn"></span>
+              <%= @likes_count = Like.where(list_id: list.id).count %>
+            </span>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

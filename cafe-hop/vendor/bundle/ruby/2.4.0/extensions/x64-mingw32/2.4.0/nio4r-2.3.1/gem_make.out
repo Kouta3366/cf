@@ -1,0 +1,19 @@
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
+D:/Ruby24-x64/bin/ruby.exe -r ./siteconf20181104-7444-18n4opq.rb extconf.rb
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
+make "DESTDIR=" clean
+make: 警告: ファイル 'Makefile' の修正時刻 1.1 は未来の時刻です
+make: *** ターゲット 'clean' を make するルールがありません.  中止.
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
+make "DESTDIR="
+make: 警告: ファイル 'Makefile' の修正時刻 1 は未来の時刻です
+make: 'all' に対して行うべき事はありません.
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
+make "DESTDIR=" install
+make: 警告: ファイル 'Makefile' の修正時刻 1 は未来の時刻です
+make: 'install' に対して行うべき事はありません.
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

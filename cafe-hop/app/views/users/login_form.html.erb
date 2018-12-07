@@ -1,0 +1,22 @@
+<br>
+<% if @error_message %>
+  <div class="form-error">
+    <%= @error_message %>
+  </div>
+<% end %>
+<div class="new-body">
+  <div class="users-heading">ログイン</div>
+  <%= form_tag("/login") do %>
+    <div class="email1">メールアドレス</div>
+    <div class="email2">
+      <input name="email" class="email3" value="<%= @email %>">
+    </div>
+    <div class="password1">パスワード</div>
+    <div class="password2">
+      <input type="password" name="password" class="password3" value="<%= @password %>">
+    </div>
+    <div class="login">
+      <input type="submit" class="login2" value="ログイン">
+    </div>
+  <% end %>
+</div>

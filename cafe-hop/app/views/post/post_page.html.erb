@@ -1,0 +1,35 @@
+<br>
+<% @list.errors.full_messages.each do |message| %>
+  <div class="form-error">
+    <%= message %>
+  </div>
+<% end %>
+
+<div class="new-body">
+  <div class="users-heading">投稿</div>
+  <%= form_tag("/post/create", {multipart: true}) do %>
+    <div>お店の名前</div>
+    <div class="new-textarea2">
+      <textarea class="new-textarea" name="name"><%= @list.name %></textarea>
+    </div>
+    <div>エリア</div>
+    <div class="new-textarea2">
+      <select class="new-textarea" name="pref">
+        <% @areas.each do |area| %>
+          <% if @list.area_id == area.id %>
+            <option selected><%= area.prefecture %></option>
+          <% else %>
+            <option><%= area.prefecture %></option>
+          <% end %>
+        <% end %>
+      </select>
+    </div>
+    <div>画像</div>
+    <div class="edit-image2">
+      <input class="edit-image" name="image" type="file">
+    </div>
+    <div class="edit-storage3">
+      <input class="edit-storage2" type="submit" value="投稿">
+    </div>
+  <% end %>
+</div>

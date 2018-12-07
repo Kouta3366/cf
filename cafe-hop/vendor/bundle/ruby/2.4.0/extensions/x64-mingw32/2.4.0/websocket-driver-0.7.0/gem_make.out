@@ -1,0 +1,22 @@
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+D:/Ruby24-x64/bin/ruby.exe -r ./siteconf20181104-7444-y8t5mv.rb extconf.rb
+creating Makefile
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+make: 警告: ファイル 'Makefile' の修正時刻 0.8 は未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+make: 警告: ファイル 'Makefile' の修正時刻 0.71 は未来の時刻です
+generating websocket_mask-x64-mingw32.def
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: F:/MyService/cafe-hop/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+make: 警告: ファイル 'websocket_mask.so' の修正時刻 1.4 は未来の時刻です
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20181104-7444-7nlsn7
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

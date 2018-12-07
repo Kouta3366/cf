@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+    attributes:
+      user:
+        name: ユーザー名
+        email: メールアドレス
+        image_name: 写真名
+        password: パスワード
+
+ja:
+  activerecord:
+    models:
+      list: 投稿
+    attributes:
+      list:
+        name: お店の名前
+        image_name: 写真名
